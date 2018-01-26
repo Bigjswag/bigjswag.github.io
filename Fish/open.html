@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+
+var menu_text = new sjs.Text("start",28,"blue");
+
+
+menu_text.centerH();
+
+var pongBtn = new sjs.Button("just hit it", function(){
+window.location = "pong.html";
+});
+
+
+pongBtn.center();
+
+var fishBtn = new sjs.Button("just", function(){
+window.location = "../Fish/fishindez.html";
+});
+
+fishBtn.left();
+
+var info_text = new sjs.Text("Created By BIGJSWAG",20,"black");
+
+info_text.bottom().centerH();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>

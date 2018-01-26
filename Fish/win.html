@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> win </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var score_txt = new sjs.Text("Your Score: 0", 21, "orange");
+score_txt.setText("Your Score: "+localStorage.getItem("score")); 
+
+var menu_text = new sjs.Text("your to good",28,"blue");
+menu_text.centerH();
+
+var startBtn = new sjs.Button("try again", function(){
+window.location = "fishwork.html";
+});
+
+startBtn.center();
+var info_text = new sjs.Text("Created By james anderson",20,"black");
+
+info_text.bottom().centerH();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Fish </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
